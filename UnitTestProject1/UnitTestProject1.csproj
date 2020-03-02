@@ -50,8 +50,9 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ArrayProcessor.cs" />
+    <Compile Include="FileServerStub.cs" />
     <Compile Include="FileService.cs" />
-    <Compile Include="FileSrvice.cs" />
+    <Compile Include="IFileService.cs" />
     <Compile Include="Rectangle.cs" />
     <Compile Include="ReportViewer.cs" />
     <Compile Include="ReturnNullState.cs" />

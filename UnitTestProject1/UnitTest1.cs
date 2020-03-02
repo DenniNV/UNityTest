@@ -73,31 +73,31 @@ namespace UnitTestProject1
         [TestMethod]
         public void TestMethod9()
         {
-            FileService fileService = new FileService();
-            Assert.AreEqual(fileService.MergeTemporaryFiles("D:/Test"), 7);
+            IFileService fileService = new FileServerStub();
+            Assert.AreEqual(fileService.MergeTemporaryFiles("D:/Test"), 4);
 
         }
 
         [TestMethod]
         public void TestMethod10()
         {
-            FileService fileService = new FileService();
+            IFileService fileService = new FileServerStubExeption();
             Assert.ThrowsException<NullReferenceException>(() => fileService.MergeTemporaryFiles("dasdasgfqa"));
         }
 
         [TestMethod]
         public void TestMethod11()
         {
-            FileService fileService = new FileService();
+            IFileService fileService = new FileServerStubStopMetod();
             Assert.AreEqual(fileService.MergeTemporaryFiles("D:/Test"), 0);
         }
 
         [TestMethod]
         public void TestMethod12()
         {
-            FileService fileService = new FileService();
-            fileService.CreateTempFileForDelete("D:\\Lab2TESTPO\\");
-            int deletedBytes = new FileService().RemoveTemporaryFiles("D:\\Lab2TESTPO\\");
+            IFileService fileService = new FileServerStub();
+            //fileService.CreateTempFileForDelete("D:\\Lab2TESTPO\\");
+            int deletedBytes =  fileService.RemoveTemporaryFiles("D:\\Lab2TESTPO\\");
             Assert.AreEqual(3, deletedBytes);
         }
 
@@ -105,24 +105,26 @@ namespace UnitTestProject1
         [ExpectedException(typeof(Exception))]
         public void TestMethod13()
         {
-            new FileService().RemoveTemporaryFiles("D:\\Lab2TESTPOabc\\");
+            IFileService fileService = new FileServerStubExeption();
+            fileService.RemoveTemporaryFiles("dsda");
         }
 
         [TestMethod]
         [ExpectedException(typeof(Exception))]
         public void TestMethod14()
         {
-            new FileService().RemoveTemporaryFiles("D:\\");
+            IFileService fileService = new FileServerStubExeption();
+            fileService.RemoveTemporaryFiles("aassd");
         }
 
         [TestMethod]
         public void TestMethod15()
         {
-            FileService fileService = new FileService();
-            fileService.CreateTempFileForDelete("D:\\Lab2TESTPO\\");
-            ReportViewer reportViewer = new ReportViewer();
-            reportViewer.Clean("D:\\Lab2TESTPO\\");
-            int deletedBytes = reportViewer.UsedSize;
+            IFileService fileService = new FileServerStub();
+           // fileService.CreateTempFileForDelete("D:\\Lab2TESTPO\\");
+           // ReportViewer reportViewer = new ReportViewer();
+            // reportViewer.Clean("D:\\Lab2TESTPO\\");
+            int deletedBytes = fileService.RemoveTemporaryFiles("dsadasad");
             Assert.AreEqual(3, deletedBytes);
         }
     }
