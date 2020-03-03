@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace UnitTestProject1
 {
-    class FileService
+    class FileService: IFileService
     {
         public int MergeTemporaryFiles(string dir)
         {
