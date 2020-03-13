@@ -2,6 +2,8 @@
 using System.IO;
 using System.Text;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using Moq;
+using Moq.Protected;
 
 namespace UnitTestProject1
 {
@@ -114,6 +116,7 @@ namespace UnitTestProject1
         public void TestMethod14()
         {
             IFileService fileService = new FileServerStubExeption();
+
             fileService.RemoveTemporaryFiles("aassd");
         }
 
@@ -126,6 +129,27 @@ namespace UnitTestProject1
             // reportViewer.Clean("D:\\Lab2TESTPO\\");
             int deletedBytes = fileService.RemoveTemporaryFiles("dsadasad");
             Assert.AreEqual(3, deletedBytes);
+        }
+
+
+       
+        [TestMethod]
+        public void TestMoq3()
+        {
+            var mockInfo = new Mock<IFileService>();
+            mockInfo.Setup(d => d.RemoveTemporaryFiles(It.IsAny<string>())).Returns(3);
+            FileService fileService = new FileService(mockInfo.Object);
+            int temp = fileService.RemoveTemporaryFiles("dsadsada");
+            Assert.AreEqual(3, temp);
+        }
+
+        [TestMethod]
+        public void TestMoq4()
+        {
+            var mockInfo = new Mock<IFileService>();
+            mockInfo.Setup(d => d.RemoveTemporaryFiles(It.IsAny<string>())).Throws<ArgumentException>();
+            FileService fileService = new FileService(mockInfo.Object);
+            Assert.ThrowsException<ArgumentException>(() => fileService.RemoveTemporaryFiles("Temp"));
         }
     }
 }

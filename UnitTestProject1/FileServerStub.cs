@@ -8,6 +8,7 @@ namespace UnitTestProject1
 {
     class FileServerStub : IFileService
     {
+
         public int MergeTemporaryFiles(string dir)
         {
             return 4;
