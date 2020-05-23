@@ -1,0 +1,17 @@
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.exe
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.csprojAssemblyReference.cache
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.AssemblyInfoInputs.cache
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.AssemblyInfo.cs
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Newtonsoft.Json.dll
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\WebDriver.dll
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.csproj.CopyComplete
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.deps.json
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.runtimeconfig.json
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.runtimeconfig.dev.json
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.dll
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\Selenium_WebTesting.pdb
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\bin\Debug\netcoreapp3.1\WebDriver.Support.dll
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.dll
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.pdb
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.genruntimeconfig.cache
+D:\VisualStudio2019\Selenium_WebTesting\Selenium_WebTesting\obj\Debug\netcoreapp3.1\Selenium_WebTesting.csproj.CoreCompileInputs.cache
